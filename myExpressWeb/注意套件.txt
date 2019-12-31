@@ -1,0 +1,4 @@
+npm install 下面套件
+iconv-lite
+child_process
+express
