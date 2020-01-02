@@ -1,0 +1,6 @@
+myExpressWeb
+cdn : qs   前端防止跨域政策
+
+heroku
+pip install flask
+pip install flask_cors 後端防止跨域政策

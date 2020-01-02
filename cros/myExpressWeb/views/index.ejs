@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- 前端要對後端進行跨域時 要用qs套件 -->
+    <script src="https://cdn.bootcss.com/qs/6.9.0/qs.js"></script>
+    <script src="https://cdn.bootcss.com/qs/6.9.0/qs.min.js"></script>
+
+    <!-- <script src="https://cdn.neo4jlabs.com/neovis.js/v1.2.1/neovis.js"></script>
+    <script src="https://rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js"></script> -->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <!-- 進入頁面時 觸發draw()函數 -->
+  <body onload="draw()">
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <input class="input-xlarge" id="input_text1" name="textbox" />
+    <button id="button1" type="submit">輸入</button>
+    <div id="viz"></div>
+    <p id="test">test</p>
+  </body>
+</html>
+
+<script>
+  $("#button1").click(function() {
+    var result1 = $("#input_text1").val();
+    console.log("輸入值: ", result1);
+    /**/
+    axios
+      .post("http://127.0.0.1:3001/test", Qs.stringify({ test: "00" }))
+      .then(function(res) {
+        console.log("後端傳回給前端的參數: ", res);
+      })
+      .catch(function(err) {
+        console.log(err);
+      });
+  });
+</script>
+
+<script>
+  function draw() {
+    console.log("success reload");
+  }
+</script>
