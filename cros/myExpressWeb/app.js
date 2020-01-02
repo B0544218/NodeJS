@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-//如果有對這個express用跨域的話
+//如果是對express server發生跨域的話
 // app.use(function(req, res, next) {
 //   res.setHeader("Access-Control-Allow-Origin", "https://127.0.0.1:3000"); // update to match the domain you will make the request from
 //   res.setHeader(
