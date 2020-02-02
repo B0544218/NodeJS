@@ -44,6 +44,10 @@ git commit -m "存檔點名稱"
 (如果發生error可能是 電腦上的存檔點結構與GitHub網站的存檔點結構不同)
 git push origin master
 
+```
+
+![image](https://github.com/B0544218/NodeJS/blob/master/GitHub_history.JPG)
+```
 ▼ 更改 歷史紀錄
 (commitID 可以去GitHub網站上的history查詢)
 git reset --hard <commitID>
@@ -52,4 +56,4 @@ git reset --hard <commitID>
 (完全覆蓋GitHub網站上的存檔點結構 以自己電腦上的存檔點結構為主)
 git push -f origin master
 
-```
+
