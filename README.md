@@ -55,5 +55,8 @@ git reset --hard <commitID>
 ▼ 上傳到某個GitHub用戶
 (完全覆蓋GitHub網站上的存檔點結構 以自己電腦上的存檔點結構為主)
 git push -f origin master
-
+```
+## 如果用 private repo
+- 去個人檔案的settings > Developer setting > personal access token > 產生token()
+- git clone https://<token>@github.com/owner/repo.git
 
