@@ -57,6 +57,6 @@ git reset --hard <commitID>
 git push -f origin master
 ```
 ## 如果用 private repo
-- 去個人檔案的settings > Developer setting > personal access token > 產生token()
+- 去個人檔案的settings > Developer setting > personal access token > 產生token( 勾選repo )
 - git clone https://<token>@github.com/owner/repo.git
 
