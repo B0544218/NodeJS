@@ -60,3 +60,9 @@ git push -f origin master
 - 去個人檔案的settings > Developer setting > personal access token > 產生token( 勾選repo )
 - git clone https://<token>@github.com/owner/repo.git
 
+## Visual studio extension
+- eslint
+- prettier eslint
+- vscode-icons
+
+
