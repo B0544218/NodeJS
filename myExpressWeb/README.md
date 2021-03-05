@@ -1,3 +1,4 @@
+## window
 - 下載NODE
 - node -v檢查安裝
 - 檢查npm install -g express-generator可不可以執行
@@ -9,3 +10,8 @@
 - 到project中進行npm install(製造出node_module)
 - 如果要執行的話在project的根目錄打 node 或 node ./bin/www
 
+## Ubuntu
+- sudo apt-get install nodejs
+- sudo apt-get install npm
+- npm init -y (製作package)
+- npm install express
