@@ -19,7 +19,21 @@
   1. npm config set prefix "C:\Program Files\nodejs\node_global"  
   2. npm config set cache "C:\Program Files\nodejs\node_cache"
 - 打開系統管理員 執行npm install express -g ，查看node_global 文件
-
+## 連接mysql
+#### 第一次使用
+  - 到mysql command line client使用: ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '密碼';
+  - 成功後，在執行: FLUSH PRIVILEGES;
+```
+// npm install mysql
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+  host:'localhost',
+  user:'root',
+  password:'root'
+});
+connection.connect();
+connection.end();
+```
 ## Ubuntu
 - sudo apt-get install nodejs
 - sudo apt-get install npm
