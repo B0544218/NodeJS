@@ -34,6 +34,25 @@ var connection = mysql.createConnection({
 connection.connect();
 connection.end();
 ```
+#### 查詢mysql
+```
+router.get('/', function(req, res, next) {
+  var connection = mysql.createConnection({
+    host:'localhost',
+    user:'root',
+    password:'root',
+    database:'demo'
+  });
+  
+  connection.connect();
+  connection.query('select * from transactions', function (error, results, fields) {
+    if (error) throw error;
+    console.log(JSON.parse( JSON.stringify(results) ) );
+  });
+  connection.end();
+});
+```
+
 ## Ubuntu
 - sudo apt-get install nodejs
 - sudo apt-get install npm
