@@ -8,16 +8,18 @@ $.ajax({
     success: function (response) { }// 成功後要執行的函數
 });
 
-例子:
+例子1:
 $.ajax({
 url:'https://ruienyuski.github.io/git_test/data.json',
 success:function(response){
-$('.info').html('抓到資料囉!');
+$('.info').html('抓到資料囉!');   # class為info的tag，他們的字改為抓到資料囉!
 },
 error:function(xhr){
 alert("發生錯誤: " + xhr.status + " " + xhr.statusText);
 }
  });
+ 
+
 ```
 
 ### html
